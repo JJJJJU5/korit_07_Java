@@ -8,12 +8,13 @@ public class Condition09 {
         int year = 0;
         System.out.print("연도를 입력하시오. >>>");
         year = scanner.nextInt();
-        String leapYear = "";
+        String leapYear = "윤년입니다.";
 
         if((year % 4 == 0 && year % 100 !=0) ||(year % 400 == 0)) {}
         else {
             leapYear = "윤년이 아닙니다.";
         }
+
         System.out.println(year + "년은" + leapYear);
     }
 

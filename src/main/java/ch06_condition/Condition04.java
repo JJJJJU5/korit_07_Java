@@ -14,6 +14,8 @@ import java.util.Scanner;
     } else if(조건식4) {
         실행문4
     }
+    else {
+    실행문 }
  */
 public class Condition04 {
     public static void main(String[] args) {
