@@ -20,7 +20,7 @@ import java.util.Scanner;
 public class Condition04 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("포인트를 입력하세요 >>>");
+        System.out.print("포인트를 입력하세요 >>>");
         int point = scanner.nextInt();
         String userGrade = "";
 
