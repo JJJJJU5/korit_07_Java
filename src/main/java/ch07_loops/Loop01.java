@@ -19,6 +19,88 @@ package ch07_loops;
  */
 public class Loop01 {
     public static void main(String[] args) {
+        // 1부터 100까지 출력하는 예시
+        int i = 0;
+        while (i < 101) {
+            System.out.println(i);
+             ++i;                                  //i를 증가시켜서 24번 라인이
+             //특정 시점에 조건이 false가
+            //되도록 지정
+        }
+        System.out.println("최종 i의 결과값");
+//       int j = 0;
+//           while (j < 100) {
+//                System.out.println(++j);
+
+            // 그래서 1부터 100까지의 합을 구하는 방식
+//        int num1 = 1;
+//        int sum = 0;
+//        //을 이용하여 1부터 100까지의 합을 구하시오.
+//        // for문을 쓰지 않고 작성
+//
+//        sum = (100 * 101) / 2;
+//       System.out.println(sum);
+//        while (num1 < 101){
+//            sum += num1;
+//            num1++;
+//
+//        }
+//        System.out.println("최종 합계 : " + sum);
+//       int sum2 = (100 * 101) / 2;
+//        System.out.println("등차수열의 합계 공식 이용 : " + sum);
+
+
+        /*
+            사실 1부터 1씩 증가하는 합 공식은 while 반복문을 쓰는 것 자체가
+            비효율 적이다
+
+            하지만 while문 자체는 Java 문법이고 , if에서와 동일하게 중첩적으로 사용이 가능하다
+            그리고 while문 내부에 if문이 들어가는 응용이 가능함
+
+            예를 들어, '공차가 2인 a1이 0인 수열의 a50까지의 합을 구하시오'
+            와 같은 문제가 나온다고 가정했을 때, 그 때는 47번 라인의 공식 적용이
+            불가능하하다
+         */
+//        int j = 0;
+//        int sum2 = 0;
+//        while (j <  100) {
+//         if( j % 2 == 0) {
+//                sum2 += j;
+//            }
+//
+//      }
+//        while (j <  101) {
+//            sum2 += j;
+//            j+=2;
+//        }
+//        System.out.println(sum2);
+        /*
+            1부터 100까지
+            1
+            2
+            3
+            ...
+            100
+            으로 출력하는 것을 위에 예시가 나와있습니다.
+            1 2 3 4 5 6 ... 100으로 출력하시오.
+         */
+            int k = 0;
+            while (k < 100) {
+                System.out.print(++k + " ");
+
+            }
+
 
     }
+
 }
+
+
+
+
+
+
+
+
+
+
