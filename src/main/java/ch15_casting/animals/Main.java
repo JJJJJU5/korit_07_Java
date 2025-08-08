@@ -8,7 +8,6 @@ public class Main {
 
         Animal animal1 = dog1; // 업캐스팅 #1
         // 예시
-        int a = 1;
         animal1.makeSound();  // 결과값 : 개가 짖습니다.. 즉 재정의된 method가 호출됨
         //animal1.fatch(); // 불가능
         Animal animal2 = new Dog(); // 이 형태가 A a = new B(); 형태

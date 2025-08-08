@@ -7,12 +7,16 @@ public class ssssmain {
 
         ssss.setName("쿠에르탈리스");
         ssss.setAge(-20);
+        int num = 0;
+        int sum = 0;
+        for ( num = 0; ; num++) {
+            sum += num;
+            if (sum >= 100) {
+                break;
+            }
 
-
-
-
-
-
-
+        }
+        System.out.println(num);
+        System.out.println(sum);
     }
 }
