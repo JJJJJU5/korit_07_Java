@@ -24,7 +24,15 @@ public class CentralControl {
          }
          deviceArray[emptyIndex] = device; // private로 적용해서 method로 경유
          //public 이면 그냥 main 에서 사용 해도 무관
-         System.out.println("장치가 연결 되었습니다.");
+         System.out.println(device.getClass().getSimpleName() + "장치가 연결되었습니다.");
+         /*
+            ,getClass() -> 클래스명을 return하는 method  + 패키지 경로 포함
+            .getClass() -> getSimpleName() -> 클래스 명만 출력 됨
+            현재 보시면 method의 결과값을 가지고 다시 . 찍어서 그 다음 method를 호출했음
+            이상의 개념을 chaining method라고 return값의 유혀을 명확하게 알고 있어야
+            그 다음 어떤 method를 실행시킬 것인지를 알 수 있음.
+
+          */
      }
 
      private  int checkEmpty() { // 메서드인데 private 사용함. Main에서 굳이}
@@ -38,6 +46,10 @@ public class CentralControl {
          }
          return -1;
      }
+
+
+
+
      /*
         Java의 index 넘버에는 음수값이 없기 때문에 (python에서는 마이너스 인덱스 개념이 있는데 반해)
         Java는 실패를 나타날 때 -1을 사용하는 경우가 많음
@@ -47,6 +59,42 @@ public class CentralControl {
         -1 이 가장 보편적임
 
       */
+    public void powerOn() {
+        /*
+            해당 클래스의 필드인 Power[] 배열 내에 있는 객체들을 기본적으로
+            Power의 서브 클래스의 객체
+            즉, on() , off() method를 공통적으로 지니고 있음
+            그리고 Power 자료형으로 업캐스팅도 되어있음
+         */
+        for (int i = 0 ; i < deviceArray.length ; i++) {
+            if(deviceArray[i] == null) {
+                System.out.println("장치가 없어 전원을 켜지 못했습니다.");
+                continue; // break는 반복문을 즉시 종료하고 , return은; method를 즉시 종료
+                // continue는 현재 반목만 종료하고 다음 반복문으로 넘어감  break는 전체 반목문 종료
+                //즉 deviceArray[3] 주소지에 객체가 없어 null이라면
+                //70번 조건문이 실행 될텐데 , "장치가 없어 전원을 켜지 못합니다"가 출력되고 곧장
+                //deviceArray[4]를 확인하게 됨
+            }
+            deviceArray[i].on();
+
+        }
+    }
+    /*
+        powerOff() 메서드를 정의하고, Main에서 호출하시오.
+        단, 배열 내부를 탐색하는 반복문을 작성 할 때
+        향상된 for문을 사용
+     */
+
+    public  void  poweroff(){
+        for ( Power device : deviceArray) {
+            if (device == null) {
+                System.out.println("장치가 없어 전원을 켜지 못했습니다.");
+                continue;
+            }
+            device.off();
+        }
 
 
+
+    }
 }
