@@ -11,4 +11,7 @@ public class LED implements Power{
         System.out.println("LED 전원을 끕니다");
 
     }
+    public  void changeColor() {
+        System.out.println("조명의 색깔을 바꿈");
+    }
 }
