@@ -10,8 +10,22 @@ public class Product {
     private String name;
     //필드 레벨에서 추가적으로 설정한 애너테이션
     @Getter
-    private static  int count = 0;
+    private static  int count = 0; // 변하는 값의 모든 인스턴스를 공유
 
+    // 롬북을 사용하지 않은 static 메서드로 정의
+    private static String title = "제품";
 
+    public  static  String getTitle() {
+        return title;
+    }
+
+    // 인스턴스 변수 수준의 field 정의
+    private int instanceCount = 0; // 필드인데 초기화 했음 // 기본적으로 객체에 종속
+
+    public Product() {
+        System.out.println("Product 클래스의 인스턴스가 생성되었습니다.");
+        instanceCount++;
+        count++;
+    }
 
 }
