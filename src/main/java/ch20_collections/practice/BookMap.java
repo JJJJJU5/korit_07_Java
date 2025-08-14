@@ -52,11 +52,13 @@ public class BookMap {
         Scanner scanner = new Scanner(System.in);
         Map<String,Integer> bookInvetory = new HashMap<>();
         boolean endOfProgram = false;
+
         while (!endOfProgram) {
             System.out.println("-----도서 재고 관리 프로그램-----");
             System.out.println("1. 도서 추가\n2. 재고 수정\n3. 재고 목록\n4. 종료");
             System.out.print("메뉴를 선택하세요 >>> ");
             int option = scanner.nextInt();
+
             if (option == 1) {
                 scanner.nextLine();
                 System.out.print("새 도서명을 입력하세요 >>>");
@@ -71,6 +73,7 @@ public class BookMap {
                     System.out.println(bookTitle + " 도서 가 " + bookstock + " 권 추가되었습니다.");
                     System.out.println(bookTitle);
                 }
+
             } else if (option == 2 ) {
                 scanner.nextLine();
                 System.out.print("재고 변경할 도서명을 입력하세요>>>");
@@ -83,6 +86,7 @@ public class BookMap {
                 } else {
                     System.out.println("해당 도서가 재고에 없습니다..");
                 }
+
             } else if(option == 3) {
                 Set<String> keySet = bookInvetory.keySet();
                 List<String> keyList = new ArrayList<>();
@@ -92,9 +96,11 @@ public class BookMap {
                 for (String key : keyList) {
                     System.out.println("도서명: " + key + " 현재 재고: " + bookInvetory.get(key));
                 }
+
             } else if (option == 4) {
                 System.out.println("도서 관리 프로그램을 종료합니다.");
                 break;
+
             } else {
                 System.out.println("잘못된 선택입니다.");
             }
