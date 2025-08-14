@@ -25,13 +25,41 @@ import java.util.*;
 public class Meeting {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Set<String>attendees = new HashSet<>();
-        List<String>meetingList = new ArrayList<>();
-        System.out.print("--- 모임 참석자 명단 관리 ---");
-        System.out.println("[ 종료 ] 를 입력하면 프로그램을 종료합니다.");
+        Set<String> attendees = new HashSet<>();
+        List<String> meetingList = new ArrayList<>();
+        System.out.println("--- 모임 참석자 명단 관리 ---");
+        System.out.println("종료 를 입력하면 프로그램을 종료합니다.");
         //횟수가 정해지지 않은 반복문을 작성문을 작성 할 때는 while 문 사용
-        while (true) { String str
-
+        while (true) {
+            System.out.print("참석자 이름를 입력하세요 >>> ");
+            String name = scanner.nextLine();
+            if (name.equals("종료")) {
+                System.out.println("프로그램이 종료되었습니다.");
+                break;
+            }
+            attendees.add(name);
         }
+            System.out.println("\n--- 최종 참석자 명단 ---");
+            // set을 list로 변경
+            meetingList.addAll(attendees);
+            // 내부의 element들을 쉼표를 포함해서 출력
+            for(int i = 0 ; i  < meetingList.size() ; i++) {
+                if (i == meetingList.size() - 1) { // meetingList.size() - 1는 list의 마지막 index 넘버
+                    System.out.println(meetingList.get(i));
+                    break;
+                }
+                System.out.print(meetingList.get(i) + ",");
+            }
+
+
+
+
+
+
+
+
+
     }
 }
+
+
