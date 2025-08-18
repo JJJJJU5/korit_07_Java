@@ -52,7 +52,6 @@ public class BookMap {
         Scanner scanner = new Scanner(System.in);
         Map<String,Integer> bookInvetory = new HashMap<>();
         boolean endOfProgram = false;
-
         while (!endOfProgram) {
             System.out.println("-----도서 재고 관리 프로그램-----");
             System.out.println("1. 도서 추가\n2. 재고 수정\n3. 재고 목록\n4. 종료");
