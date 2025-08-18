@@ -2,7 +2,6 @@ package ch18_static.builders;
 
 import lombok.ToString;
 
-import java.util.Locale;
 @ToString
 public class Person {
     private  String name;
@@ -19,7 +18,7 @@ public class Person {
     }
     /*
         PersonMain 에서 생성자 호출을 통해서 객체를 생성하는 것을 막았음
-        그리고 매개변수 부분을 보면 Builder builder라고 되어있고
+        그리고 매개변수 부분을 보면 Builder builder 라고 되어있고
         그 다움 줄에는 builder.name을 보고
         builder 객체의 필드로 name / age / address가 있는 것으로 보임
         여기서 중요한 점은 Person의 필드와 Builder의 필드가 동일해야 한다는 점

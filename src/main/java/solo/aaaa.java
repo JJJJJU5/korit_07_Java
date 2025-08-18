@@ -1,6 +1,6 @@
 package solo;
 
-import java.util.Scanner;
+
 
 public class aaaa {
 

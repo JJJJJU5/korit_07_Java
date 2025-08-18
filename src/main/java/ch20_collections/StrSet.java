@@ -15,7 +15,7 @@ import java.util.*;
     다만 집합은 숫자로만 이루어졌던 반면에 Set은 다양한 자료형으로 만들어 질 수 있음
 
  */
-public class StrSet {
+public class   StrSet {
     public static void main(String[] args) {
         // Set 객체 생성
         Set<String> strSet = new HashSet<>();

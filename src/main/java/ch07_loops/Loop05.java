@@ -63,7 +63,7 @@ public class Loop05 {
 //        System.out.println("1부터" + n + " 까지의 합은" + sum + "입니다.");
 //        scanner.close();
 
-         for(int i = 1 ; i < n+1 ; i++) {
+         for(int i = 0 ; i < n+1 ; i++) {
             sum += i;
             if (i % 2 == 0) {
                 sumEven += i;

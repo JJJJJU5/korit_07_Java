@@ -62,6 +62,7 @@ public class Method04 {
         return result;
     }
     public static void main(String[] args) {
+
         System.out.println(getStar());
     }
 }

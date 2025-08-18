@@ -9,10 +9,10 @@ public class Method02 {
     // call4() 유형으로 작성 . -> 몇 줄 짜리인지 / 어 떤 유형인지를 main에서
     // 받을 예정이기 때문
     public static String getStar(int rows, int option){
-        // 메서드 내에서만 사용하는 지역 변수 (local , variable) 썬언 및 초기화
+        // 메서드 내에서만 사용하는 지역 변수 (local , variable) 선언 및 초기화
         String result = "";
         //이 사이에 별찍기 관련 로직이 들어갈 예정.
-        // 주으 ㅣ할 점은 sout이 아니라  return 타입이 고정되어 있다는 점
+        // 주의 할 점은 sout이 아니라  return 타입이 고정되어 있다는 점
         // 이 때문에 별찍기 로직을 그대로 가져오기는 하지만 sout으로 출력해서는 안됨.
         if (option == 1) {
             for (int i = 0 ; i < rows + 1 ; i++) {
@@ -26,15 +26,14 @@ public class Method02 {
             for ( int i = 0 ; i < rows ; i++) {
                 // 공백 관련 for문
                 for( int j = 0 ; j < rows - (i + 1) ; j++ ) {
-                    result += "  ";
+                    result += " ";
                 }
                 // 별찍기 관련 for문
                 for ( int k = 0 ; k < i + 1 ; k++ ) {
-                    result += "*️";
+                    result += "*";
                 }
                 result += "\n";
             }
-
         } else if (option == 3) {
             for ( int i = 0 ; i < rows ; i++ ) {
                 for ( int j = rows ; j > i ; j-- ) {
@@ -42,7 +41,6 @@ public class Method02 {
                 }
                 result += "\n";
             }
-
         } else if (option == 4) {
             for (int i = 0 ; i < rows ; i++) {
                 for (int j = 0 ; j < i + 1 ; j++) {

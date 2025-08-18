@@ -1,8 +1,8 @@
 package ch06_condition;
 
-import javax.sound.midi.Soundbank;
+
 import java.util.Scanner;
-import java.util.SortedMap;
+
 
 public class Condition05 {
     public static void main(String[] args) {

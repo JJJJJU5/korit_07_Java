@@ -60,7 +60,7 @@ public class Loop04 {
         System.out.print("1부터 몇 까지 더하시겠습니까? >>>");
         n = scanner.nextInt();
 
-        for(int i = 1 ; i < (n + 1); i++) {
+        for(int i = 0 ; i < (n + 1); i++) {
             sum4 += i;
 
         }

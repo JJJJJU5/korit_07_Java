@@ -23,5 +23,7 @@ public class ProductMain {
         System.out.println("정적 필드 조회 : " + Product.getCount());
 
 
+
+
     }
 }

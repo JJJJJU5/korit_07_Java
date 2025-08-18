@@ -1,6 +1,5 @@
 package ch06_condition;
 
-import java.security.spec.RSAOtherPrimeInfo;
 import java.util.Scanner;
 
 /*

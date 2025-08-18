@@ -75,7 +75,10 @@ public class Loop06 {
 
         //번외 문제 -> 100부터 1까지 엯순으로 출력하시오.
         for ( int i = 100; i > 0 ; i--) {
-            System.out.println(i);
+            System.out.print(i+" ");
+            if (i % 10 == 0 ) {
+                System.out.println(" ");
+            }
 
         }
 

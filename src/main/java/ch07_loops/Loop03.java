@@ -22,14 +22,14 @@ public class Loop03 {
         //1일차 1교시입니다. 1일차 3교시입니다.
         //2일차 1교시입니다. ...
         //5일차 1교시입니다. ~ 5일차 3교시입니다.
-//        while (day < 6) {
-//            int lesson = 1; // 반복실행문 1 - a에 해당합니다. 변수 선언 및 초기화 반복문 내부에서 이루어짐
-//            while (lesson < 4) {
-//                System.out.println(day + " 일차 " + lesson + "교시입니다." );
-//                lesson++;
-//            }
-//            day++; // 반복실행문 1-b에 해당함.
-//        }
+        while (day < 6) {
+            int lesson = 1; // 반복실행문 1 - a에 해당합니다. 변수 선언 및 초기화 반복문 내부에서 이루어짐
+           while (lesson < 4) {
+               System.out.println(day + " 일차 " + lesson + "교시입니다." );
+               lesson++;            }
+
+            day++; // 반복실행문 1-b에 해당함.
+        }
        // System.out.println(lesson);  반복문 밖에서 lesson을 꺼내서 쓸 수 없음 day - 전역 lesson - 지역
         // 차이는 {} 내부에 있냐 밖에 있냐
 

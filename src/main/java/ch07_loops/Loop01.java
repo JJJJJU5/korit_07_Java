@@ -23,11 +23,16 @@ public class Loop01 {
         int i = 0;
         while (i < 101) {
             System.out.println(i);
-             ++i;                                  //i를 증가시켜서 24번 라인이
-             //특정 시점에 조건이 false가
+            ++i;
+            if(i > 24) {
+                break;
+                //i를 증가시켜서 24번 라인이
+            }
+            //특정 시점에 조건이 false가
             //되도록 지정
         }
-        System.out.println("최종 i의 결과값");
+        System.out.println("최종 i의 결과값" + (i-1));
+        System.out.println();
 //       int j = 0;
 //           while (j < 100) {
 //                System.out.println(++j);
@@ -61,19 +66,19 @@ public class Loop01 {
             와 같은 문제가 나온다고 가정했을 때, 그 때는 47번 라인의 공식 적용이
             불가능하하다
          */
-//        int j = 0;
-//        int sum2 = 0;
-//        while (j <  100) {
-//         if( j % 2 == 0) {
-//                sum2 += j;
-//            }
-//
-//      }
-//        while (j <  101) {
-//            sum2 += j;
-//            j+=2;
-//        }
-//        System.out.println(sum2);
+        int j = 0;
+        int sum2 = 0;
+        while (j <  100) {
+         if( j % 2 == 0) {
+                sum2 += j;
+            }
+
+      }
+       while (j <  101) {
+            sum2 += j;
+           j+=2;
+       }
+       System.out.println(sum2);
         /*
             1부터 100까지
             1
@@ -84,11 +89,11 @@ public class Loop01 {
             으로 출력하는 것을 위에 예시가 나와있습니다.
             1 2 3 4 5 6 ... 100으로 출력하시오.
          */
-            int k = 0;
-            while (k < 100) {
-                System.out.print(++k + " ");
-
-            }
+//            int k = 0;
+//            while (k < 100) {
+//                System.out.print(++k + " ");
+//
+//            }
 
 
     }

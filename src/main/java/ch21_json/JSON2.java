@@ -48,6 +48,7 @@ public class JSON2 {
         User user1 = new User("kim1","9876","a@test.com","김일","20");
         String jsonUser1 = gson.toJson(user1);
         System.out.println(jsonUser1);
+        System.out.println("----");
         String jsonUser2 = gsonBuilder.toJson(user1);
         System.out.println(jsonUser2);
 

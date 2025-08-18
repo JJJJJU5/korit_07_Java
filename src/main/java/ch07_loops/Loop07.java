@@ -27,17 +27,13 @@ public class Loop07 {
                 System.out.print(" * ");
             System.out.println();
         }
+        System.out.println();
         for (int i = 0 ; i < (n+1) ; i++) {
-            for (int j = (n+1) ; i - j < 0 ; j--)
+            for (int j = n ; i - j < 0 ; j--)
                 System.out.print(" * ");
             System.out.println();
         }
-        for ( int i = 0 ; i < n ; i++) {
-            for ( int j = n ; j - i > 0 ; j--) {
-                System.out.print( " * " );
-            }
-            System.out.println();
-        }
+
 
 
 

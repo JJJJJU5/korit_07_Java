@@ -16,6 +16,7 @@ package ch09_classes.products;
    product1
    productNum 123456
    productName LG엘패드
+
 2. 시리얼 넘버를 기본으로 입력하는 매개변수 생성자를 통해
     객체를 생성하시오.
     product2

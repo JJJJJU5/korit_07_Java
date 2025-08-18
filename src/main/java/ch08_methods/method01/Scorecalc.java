@@ -27,7 +27,7 @@ public class Scorecalc {
         System.out.print("몇 과목의 점수를 입력하시겠습니까? >>>");
         num0fSubs = scanner.nextInt();
         for (int i = 0 ; i < num0fSubs ; i++) {
-            System.out.println((i+1)+ " 과목의 점수를 입력하세요 >>>");
+            System.out.print((i+1)+ " 과목의 점수를 입력하세요 >>>");
             sum += scanner.nextDouble();
         }
         avg = sum / num0fSubs;

@@ -68,9 +68,8 @@ class Array02 {
 
         for (int i = 1 ; i < names.length; i +=2 ) {
             System.out.println(names[i]);
-
         }
-
+        System.out.println();
         //[1],[3]에 해당하는 element만 출력하는 반복문을 작성하십시오.
         for (int i = 0; i < names.length; i++) {
             if ( i % 2 == 1) {
