@@ -14,7 +14,7 @@ public class ProductView {
         counter++;
 
     }
-    //static 메서드의 정의 -> 대부분의 경우 getInstance() -> 시험시 힌트 클래스명.메서드명() 호출
+    //static 메서드의 정의 -> 대부분의 경우 getFactoryName() -> 시험시 힌트 클래스명.메서드명() 호출
     public  static  ProductView getInstance() {
         if(instance == null) {   // 현재 인스턴스가 없는 시점이라면 19번 코드라인이 true 이므로
             instance = new ProductView(); // ProductView() 생성자를 호출하여 intance에 대입
